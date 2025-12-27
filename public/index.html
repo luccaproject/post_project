@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Quadro de Mensagens — Teste</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Quadro de Mensagens</h1>
+
+    <form id="postForm">
+      <input id="name" placeholder="Seu nome (opcional)" maxlength="30">
+      <textarea id="text" placeholder="Escreva sua mensagem" required maxlength="500"></textarea>
+      <button type="submit">Postar</button>
+    </form>
+
+    <section id="messages" aria-live="polite"></section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/script.js"></script>
+</body>
+</html>
